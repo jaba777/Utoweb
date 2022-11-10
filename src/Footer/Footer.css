@@ -1,0 +1,14 @@
+footer{
+   width: 100%;
+   background: #838188;
+   padding: 3rem 0.5rem;
+   margin-top: 5rem;
+}
+
+.footer-logo{
+    width: 150px;
+}
+
+.footer-logo img{
+    width: 100%;
+}

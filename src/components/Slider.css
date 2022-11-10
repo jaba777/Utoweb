@@ -1,0 +1,41 @@
+.slider{
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.swiper-button-prev:after,.swiper-button-prev:after{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.swiper-button-next:after,.swiper-button-next:after{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.slider h2{
+    font-size: 40px;
+    color: #fff;
+}
+
+.slider p{
+    font-weight: 700;
+    color: #fff;
+    font-size: 25px;
+}
+
+.slider a{
+    color: #fff;
+    background: rgb(216, 57, 155);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+}

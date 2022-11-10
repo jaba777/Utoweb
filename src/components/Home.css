@@ -1,0 +1,124 @@
+
+.specialise{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about-specialise{
+    flex: 3;
+}
+
+.specialise-info h2{
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 2rem;
+}
+
+.specialise-info p{
+  color: rgb(119, 118, 118); 
+}
+
+.specialise-lists{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.specialise-lists h5{
+    font-weight: 700;
+}
+
+.specialise-lists ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: -1.5rem;
+}
+
+.specialise-lists ul li{
+    color: rgb(119, 118, 118);
+}
+
+.specialise-lists ul li i{
+    color: aqua;
+}
+
+.about-levels{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.level-info h4{
+    font-weight: 700;
+    color: rgb(98, 20, 172);
+}
+
+.level-info p{
+    color: rgb(119, 118, 118);
+}
+
+.levels-box{
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+
+
+.level-img{
+    width: 100px;
+    height: 100px;
+}
+
+.level-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+ .working-specialise{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    
+ }
+
+
+ .specialise-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    flex: 3;
+ }
+
+ .specialise-container h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.specialise-box h3{
+    color: rgb(98, 20, 172);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.specialise-box p{
+    color: rgb(119, 118, 118);
+}
+
+.specialise-img{
+    width: 800px;
+    flex: 1;
+}
+
+.specialise-img img{
+    width: 100%;
+    object-fit: contain;
+}
