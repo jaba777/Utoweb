@@ -3,10 +3,12 @@ import Slider from './Slider';
 import SliderData from '../SliderData';
 import './Home.css';
 import specImg from '../Images/spec_main_desc.jpg';
+import Courses from '../Courses';
 
 const Home = () => {
 
     const Sliderdates=SliderData;
+    const CoursesMassive=Courses;
 
   return (
     <>
@@ -113,7 +115,24 @@ const Home = () => {
 
       <section className='specific-course container'>
 
-        
+        <h2>სპეციალიზაციის სასწავლო კურსები</h2>
+
+        {CoursesMassive.map((item,index)=>{
+            return(
+                <div key={index} className='courses-box'>
+                    <div className="courses-number">
+                        <p>კურსი</p>
+                        <p>{item.id}</p>
+                    </div>
+
+                    <div className='courses-info'>
+                        <h3>{item.title}</h3>
+                        <p>პროფესორი: {item.professor}</p>
+                        <p>{item.text}</p>
+                    </div>
+                </div>
+            )
+        })}
 
       </section>
       
