@@ -1,9 +1,9 @@
 import { Routes,Route } from 'react-router-dom';
 import Header from './Header/Header';
 import './App.css';
-import Home from './components/Home';
+import Home from './Pages/Home';
 import Footer from './Footer/Footer';
-import SingUp from './components/SingUp';
+import SingUp from './Pages/SingUp';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <Route path='/sing-up' element={<SingUp />}></Route>
     </Routes>
 
-    <Footer />
+    {/*<Footer />*/}
      
     </div>
   );

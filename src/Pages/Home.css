@@ -1,0 +1,47 @@
+.trainings{
+    margin-top: 4rem;
+}
+.trainings h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.train-container{
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.train-box{
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 0.5rem 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.train-box img{
+    width: 100%;
+}
+.train-text p{
+    font-size: 14px;
+}
+
+.courses-container{
+    margin-top: 6rem;
+    
+}
+
+.courses-box{
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+.courses-box img{
+    width: 100%;
+}

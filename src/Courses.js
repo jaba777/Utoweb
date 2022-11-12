@@ -1,45 +1,34 @@
 const Courses=[
     {
         id: 1,
-        title: 'პროგრამირება Python - ზე',
-        professor: 'მაქსიმ იავიჩი',
-        text: 'სასწავლო კურსი წარმოადგენს დაპროგრამების მიმართულებით თანამედროვე სტანდარტების თეორიული და პრაქტიკული გამოყენების ათვისების საშუალებას. მასში შეისწავლება თანამედროვე, დინამიური და მულტიპარადიგმული ენა „პითონი“. რომელიც თავის თავში მოიცავს ობიექტზე ორინეტირებულ , პროცედურულ, ფუნქციონალურ და იმპერატიულ პროგრამირებას.'
+        title: 'Network Enumeration with Nmap',
+        image: 'https://academy.hackthebox.com/storage/modules/19/logo.png',
+        text: 'Nmap is one of the most used networking mapping and discovery tools because of its accurate results and efficiency. The tool is widely used by both of...'
     },{
         id: 2,
-        title: 'გამოყენებითი უსაფრთხოება',
-        professor: 'გიორგი იაშვილი',
-        text: 'საგანი მსმენელებს შეასწავლის თუ როგორ უნდა გამოიყენონ უსაფრთხოების ძირითადი მექანიზმები პრაქტიკაზე. აგრეთვე, საგანი შეასწავლის მსმენელებს თუ როგორ უნდა შეაფასონ ცალკეული უსაფრთხოების სცენარი და რა უნდა გაითვალისწინონ ან/და მოიმოქმედონ სხვადასხვა კიბერ საფრთხეების წინაშე. '
+        title: 'Cracking Passwords with Hashcat',
+        image: 'https://academy.hackthebox.com/storage/modules/20/logo.png',
+        text: 'This module covers the fundamentals of password cracking using the Hashcat tool.'
     },{
         id: 3,
-        title: 'ქსელური ინფრასტრუქტურა და მისი მუშაობის პრინციპები',
-        professor: 'დავით ტალიაშვილი',
-        text: 'სასწავლო კურსი წარმოადგენს ქსელის მიმართულებით თანამედროვე სტანდარტების თეორიული და პრაქტიკული გამოყენების ათვისების საშუალებას. მასში შეისწავლება თანამედროვე მიდგომები, რომელიც დაგეხმარებათ ქსელის დაგეგმარებაში და კონფიგურაციაში.'
+        title: 'Active Directory LDAP',
+        image: 'https://academy.hackthebox.com/storage/modules/22/logo.png',
+        text: 'This module provides an overview of Active Directory (AD), introduces core AD enumeration concepts, and covers enumeration with built-in tools.'
     }, {
         id: 4,
-        title: 'RIP, EIGRP მარშრუტიზაციის პროტოკოლები',
-        professor: 'დავით ტალიაშვილი',
-        text: 'სასწავლო კურსი წარმოადგენს Distance Vector მარშრუტიზაციის პროტოკოლების თეორიული და პრაქტიკული გამოყენების ათვისების საშუალებას. მასში შეისწავლება თანამედროვე მიდგომები, რომელიც დაგეხმარებათ ქსელის დაგეგმარებაში და კონფიგურაციაში.'
+        title: 'Web Requests',
+        image: 'https://academy.hackthebox.com/storage/modules/35/logo.png',
+        text: 'This module introduces the topic of HTTP web requests and how different web applications utilize them to communicate with their backends.'
     },{
         id: 5,
-        title: 'ვებ ტექნოლოგიები I',
-        professor: 'დავით ბოჭორიშვილი',
-        text: 'მსმენელები შეისწავლიან HTML და CSS ტექნოლოგიების გამოყენებით სტატიკური ვებ გვერდების შექმნის ძირითად მეთოდებს. ასევე საგანი მსმენელს შეასწავლის ინტერაქტიულ და ვიზუალურ ეფექტებს HTML და CSS ვებ ტექნოლოგიების გამოყენებით. მსმენელები შეისწავლიან მარკირების ენის ძირითად კონცეფციას და პრაქტიკაზე გამოყენებას.'
+        title: 'Secure Coding 101: JavaScript',
+        image: 'https://academy.hackthebox.com/storage/modules/38/logo.png',
+        text: "Learn how to improve your JavaScript code's security through Code Review, Static/Dynamic Analysis, Vulnerability Identification, and Patching."
     },{
         id: 6,
-        title: 'ვებ ტექნოლოგიები II',
-        professor: 'თემური თაკალანძე',
-        text: 'სასწავლო კურსი წარმოადგენს დაპროგრამების მიმართულებით თანამედროვე სტანდარტების თეორიული და პრაქტიკული გამოყენების ათვისების საშუალებას. მასში შეისწავლება თანამედროვე და დინამიური “PHP”, რომელიც თავის თავში მოიცავს ობიექტზე ორინეტირებულ და პროცედურლ პროგრამირებას.'
-    },{
-        id: 7,
-        title: 'JavaScript დაპროგრამების ენა',
-        professor: 'დავით ბოჭორიშვილი',
-        text: 'დღეისთვის JavaScript არის ერთ-ერთი მოთხოვნადი და მოქნილი დაპროგრამების ენა, რომელიც გამოიყენება მრავალ სფეროში. JavaScript-ის მეშვეობით შესაძლებელია ინტერაქტიული ვებ გვერდების შექმნა, სერვერთან მოთხოვნების გაგზავნის გარეშე, რაც იმას ნიშნავს, რომ ამ დაპროგრამების ენის მეშვეობით შეიძლება შეიქმნას დინამიური ვებ სისტემები.'
-    },
-    {
-        id: 8,
-        title: 'C პროგრამირების ენა',
-        professor: 'მაქსიმ იავიჩი',
-        text: 'სასწავლო კურსის მიზანია სტუდენტებს ასწავლოს პროგრამების წერა C++ პროგრამირების ენაზე. კურსის მიზანი ასევე არის სტუდენტებს ასწავლოს C პროგრამირების ენაზე დაწერილი პროგრამების წაკითხვა და გაანალიზება კოდში შესაძლო სუსტი წერტილების დასადგენად.'
+        title: 'JavaScript Deobfuscation',
+        image: 'https://academy.hackthebox.com/storage/modules/41/logo.png',
+        text: 'This module will take you step-by-step through the fundamentals of JavaScript Deobfuscation until you can deobfuscate basic JavaScript code and unders...'
     },
 
 ];
