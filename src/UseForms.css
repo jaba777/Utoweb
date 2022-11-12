@@ -1,0 +1,11 @@
+.useForms{
+    width: 600px;
+    max-width: 95%;
+    margin: 4rem auto;
+    background: rgb(57, 59, 59);
+    padding: 2rem 3rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
