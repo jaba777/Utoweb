@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css';
 import Logo from '../Images/Logo.png';
 import { Link } from 'react-router-dom';
+import { FaArrowAltCircleUp } from 'react-icons/fa';
 
 const Header = () => {
   return (
@@ -14,7 +15,7 @@ const Header = () => {
      <div className="links">
         <Link to='/'>Home</Link>
         <Link to='/sing-in'>Sing in</Link>
-        <Link to='/sing-up'>Sing up</Link>
+        <Link to='/sing-up'><FaArrowAltCircleUp /> Sing up</Link>
      </div>
       </div>
 

@@ -10,6 +10,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+
 const Home = () => {
 
     const Sliderdates=SliderData;
@@ -81,6 +82,7 @@ const Home = () => {
                     <h4>{item.title}</h4>
                     <p>{item.text}</p>
                  </div>
+                 
                 </Col>
             )
         })}

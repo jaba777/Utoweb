@@ -1,0 +1,30 @@
+.forms-singup{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.forms-singup div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.forms-singup div input{
+    background-color: #111927;
+    border: none;
+    color: #fff;
+    width: 100%;
+    padding: 0.4rem 0.6rem;
+}
+
+.forms-singup div input:focus{
+    outline: none;
+}
+
+.forms-singup button{
+    padding: 0.5rem 0.6rem;
+    background: #15c91e;
+    border: none;
+}

@@ -1,9 +1,9 @@
 .useForms{
-    width: 600px;
+    width: 500px;
     max-width: 95%;
     margin: 4rem auto;
-    background: rgb(57, 59, 59);
-    padding: 2rem 3rem;
+    background: #1a2332;
+    padding: 2rem 1rem;
     color: #fff;
     display: flex;
     justify-content: center;

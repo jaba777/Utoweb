@@ -83,9 +83,7 @@ const SingUp = () => {
   return (
     <>
       <UseForms>
-        <form className='container' onSubmit={onSubmitHandler}>
-
-        <div className='row row-cols-2'>
+        <form onSubmit={onSubmitHandler} className='forms-singup'>
 
         <div className="name col">
             <label htmlFor="name">Name: </label>
@@ -108,10 +106,11 @@ const SingUp = () => {
             <input type="password" id='Password' onChange={passwordChangeHandler}value={changeInputs.password} />
         </div>
 
+
         <button type='submit' onClick={onSubmitHandler}>Submit</button>
 
 
-        </div>
+      
 
         </form>
 
