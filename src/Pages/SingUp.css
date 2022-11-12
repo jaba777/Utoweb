@@ -1,8 +1,19 @@
+.starting-learn{
+    background: linear-gradient(90deg,#1f2d42,#2d4261);
+    width: 100%;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .forms-singup{
     display: flex;
     flex-direction: column;
     gap: 2rem;
     width: 100%;
+    padding: 2rem 1rem;
 }
 
 .forms-singup div{
@@ -27,4 +38,9 @@
     padding: 0.5rem 0.6rem;
     background: #15c91e;
     border: none;
+    color: #fff;
+    transition: 0.4s background ease-out;
+}
+.forms-singup button:hover{
+    background: #07720c;
 }

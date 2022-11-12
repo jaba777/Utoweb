@@ -83,6 +83,10 @@ const SingUp = () => {
   return (
     <>
       <UseForms>
+        <div className='starting-learn'>
+          <h5>Register</h5>
+          <p>Start your learning journey!</p>
+        </div>
         <form onSubmit={onSubmitHandler} className='forms-singup'>
 
         <div className="name col">
