@@ -1,20 +1,26 @@
 import React, {useState} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import UseForms from '../UseForms';
+import UseForms from '../ParentsComponents/UseForms';
 import './SingUp.css';
 import { formSubmitSlice } from '../store/useForm';
+import { useNavigate } from 'react-router-dom';
 
 const SingUp = () => {
+
+  const nav = useNavigate();
 
   const dispatch= useDispatch();
 
   const selector = useSelector(state=> state.formsSubmit);
 
+  const [confirmPass,setConfirmPass]=useState(null);
+
   const [changeInputs, setChangeInputs]= useState({
     name: '',
     surname: '',
     email: '',
-    password: ''
+    password: '',
+    confirmPass: ''
   });
 
   const nameChangeHandler=(event)=>{
@@ -47,6 +53,13 @@ const SingUp = () => {
     });
   }
 
+  const confirmPasswordChangeHandler=(event)=>{
+    setChangeInputs({
+      ...changeInputs,
+      confirmPass: event.target.value
+    });
+  }
+
 
  
   const onSubmitHandler=(event)=>{
@@ -55,17 +68,31 @@ const SingUp = () => {
     if(changeInputs.name.trim() === '' || 
     changeInputs.surname.trim() === '' || 
     changeInputs.email.trim() === '' || 
-    changeInputs.password.trim()===''){
+    changeInputs.password.trim()==='' || 
+    changeInputs.confirmPass.trim() === ''){
       return;
     }
+
+
+
+    if(changeInputs.confirmPass !== changeInputs.password){
+      return setConfirmPass(<p>please confirm password Correctly!</p>)
+    } else{
+      setConfirmPass(null);
+    }
+
+    
 
     dispatch(formSubmitSlice.addFormHandler({
                 id: Math.random(),
                 name: changeInputs.name,
                 surname: changeInputs.surname,
                 email: changeInputs.email,
-                password: changeInputs.password
+                password: changeInputs.password,
+                confirmPass: changeInputs.confirmPass
     }));
+
+    nav('/sing-in')
 
 
     console.log(selector)
@@ -74,7 +101,8 @@ const SingUp = () => {
       name: '',
       surname: '',
       email: '',
-      password: ''
+      password: '',
+      confirmPass: ''
     })
 
   }
@@ -95,7 +123,7 @@ const SingUp = () => {
         </div>
 
         <div className="fullname col">
-            <label htmlFor="fullName">FullName: </label>
+            <label htmlFor="fullName">lastName: </label>
             <input type="text" id='fullName' onChange={surNameChangeHandler} value={changeInputs.surname}/>
         </div>
 
@@ -110,11 +138,17 @@ const SingUp = () => {
             <input type="password" id='Password' onChange={passwordChangeHandler}value={changeInputs.password} />
         </div>
 
+        <div className="confirm-Password col">
+            <label htmlFor="confirm-Password">Password: </label>
+            <input type="password" id='confirm-Password' onChange={confirmPasswordChangeHandler}value={changeInputs.confirmPass} />
+        </div>
+        {confirmPass}
+
+
+
 
         <button type='submit' onClick={onSubmitHandler}>Submit</button>
-
-
-      
+        
 
         </form>
 

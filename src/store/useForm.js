@@ -10,7 +10,8 @@ const formsSlice = createSlice({
                 name: action.payload.name,
                 surname: action.payload.surname,
                 email: action.payload.email,
-                password: action.payload.password
+                password: action.payload.password,
+                confirmPass: action.payload.confirmPass
             }
 
             state.push(NewForm);
