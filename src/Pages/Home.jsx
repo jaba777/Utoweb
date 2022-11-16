@@ -60,22 +60,22 @@ const Home = () => {
      </section>
 
 
-
+        <h6>LATEST NEWS</h6>
 
       <Slider Sliderdates={Sliderdates} />
 
 
-      <Container className='courses-container'>
+    <Container className='courses-container'>
 
         <h3>Cyber Security Courses</h3>
 
-        <Row md={3}>
+        <Row>
               
              
         {CoursesMassive.map((item,index)=>{
 
             return(
-                <Col key={index} className='courses-box'>
+                <Col  md={4} key={index} className='courses-box'>
                 <div className='courses-img'>
                    <img src={item.image} alt="img" />
                 </div>
@@ -91,7 +91,7 @@ const Home = () => {
 
         </Row>
 
-        </Container>
+    </Container>
       
     </>
   )

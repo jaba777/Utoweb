@@ -2,8 +2,9 @@ import React, {useState} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import UseForms from '../ParentsComponents/UseForms';
 import './SingUp.css';
-import { formSubmitSlice } from '../store/useForm';
 import { useNavigate } from 'react-router-dom';
+import {userRegistration} from '../actions/UserActions';
+
 
 const SingUp = () => {
 
@@ -11,7 +12,9 @@ const SingUp = () => {
 
   const dispatch= useDispatch();
 
-  const selector = useSelector(state=> state.formsSubmit);
+  const selector = useSelector(state=>state.registrationReducer);
+
+  const {error,users}= selector;
 
   const [confirmPass,setConfirmPass]=useState(null);
 
@@ -61,6 +64,8 @@ const SingUp = () => {
   }
 
 
+
+
  
   const onSubmitHandler=(event)=>{
     event.preventDefault();
@@ -83,19 +88,16 @@ const SingUp = () => {
 
     
 
-    dispatch(formSubmitSlice.addFormHandler({
-                id: Math.random(),
-                name: changeInputs.name,
-                surname: changeInputs.surname,
-                email: changeInputs.email,
-                password: changeInputs.password,
-                confirmPass: changeInputs.confirmPass
-    }));
-
-    nav('/sing-in')
+    dispatch(userRegistration(changeInputs.email,changeInputs.password,changeInputs.name,changeInputs.surname,changeInputs.confirmPass));
 
 
-    console.log(selector)
+    
+    
+
+
+    nav('/sing-in');
+
+    
 
     setChangeInputs({
       name: '',

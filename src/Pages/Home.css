@@ -1,5 +1,7 @@
 .trainings{
     margin-top: 4rem;
+    margin-bottom: 5rem;
+    background-color: rgb(247, 240, 224);
 }
 .trainings h1{
     text-align: center;
@@ -13,6 +15,12 @@
     justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
+}
+
+h6{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
 }
 
 .train-box{
