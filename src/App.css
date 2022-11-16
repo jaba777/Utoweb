@@ -6,3 +6,12 @@
     box-sizing: border-box;
     font-family: 'Montserrat';
 }
+
+.lighteffect{
+    background-color: rgb(218, 228, 228) ;
+}
+
+.darkeffect{
+    background-color: #292c35;
+    color: #fff;
+}

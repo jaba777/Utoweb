@@ -3,10 +3,12 @@ import thunk from 'redux-thunk';
 import {composeWithDevTools} from 'redux-devtools-extension';
 import { registrationReducer } from '../reducer/UserReducer';
 import darkModeReducer from './darkModeReducer';
+import {SingInReducer} from '../reducer/UserSingInReducer';
 
 
 const reducer=combineReducers({
     registrationReducer: registrationReducer,
+    SingInReducer: SingInReducer,
     darkModeReducer: darkModeReducer
 })
 

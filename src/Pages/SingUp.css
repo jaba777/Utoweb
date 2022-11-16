@@ -1,3 +1,4 @@
+
 .starting-learn{
     background: linear-gradient(90deg,#1f2d42,#2d4261);
     width: 100%;
@@ -43,4 +44,10 @@
 }
 .forms-singup button:hover{
     background: #07720c;
+}
+
+.error-text{
+    font-size: 13px;
+    color: red;
+    font-weight: 600;
 }

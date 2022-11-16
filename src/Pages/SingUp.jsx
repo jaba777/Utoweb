@@ -95,7 +95,7 @@ const SingUp = () => {
     
 
 
-    nav('/sing-in');
+    //nav('/sing-in');
 
     
 
@@ -111,7 +111,7 @@ const SingUp = () => {
 
 
   return (
-    <>
+    <div className='forms-container'>
       <UseForms>
         <div className='starting-learn'>
           <h5>Register</h5>
@@ -146,16 +146,17 @@ const SingUp = () => {
         </div>
         {confirmPass}
 
-
-
-
         <button type='submit' onClick={onSubmitHandler}>Submit</button>
         
 
         </form>
 
+        {
+          error !== null && <p className='error-text'>{error}</p>
+        }
+
       </UseForms>
-    </>
+    </div>
   )
 }
 

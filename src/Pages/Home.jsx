@@ -9,6 +9,7 @@ import based from '../Images/based.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import InterviewImg from '../Images/codding.png';
 
 
 const Home = () => {
@@ -60,22 +61,22 @@ const Home = () => {
      </section>
 
 
-        <h6>LATEST NEWS</h6>
+        { /*<h6>LATEST NEWS</h6>
 
-      <Slider Sliderdates={Sliderdates} />
+        <Slider Sliderdates={Sliderdates} />*/}
 
 
     <Container className='courses-container'>
 
         <h3>Cyber Security Courses</h3>
 
-        <Row>
+        <Row className='justify-content-md-center box-container'>
               
              
         {CoursesMassive.map((item,index)=>{
 
             return(
-                <Col  md={4} key={index} className='courses-box'>
+                <Col key={index} className='courses-box' lg={3}>
                 <div className='courses-img'>
                    <img src={item.image} alt="img" />
                 </div>
@@ -90,6 +91,28 @@ const Home = () => {
         })}
 
         </Row>
+
+    </Container>
+
+    <Container className='interview'>
+
+        <div className="interviw-text">
+
+            <h2>Interview like it’s <span>2022</span></h2>
+
+            <p>Ditch out of reach and out of touch interview questions about golf balls and 747s — and turn off your clunky screen share for good. Code, create, and collaborate with an IDE built to showcase real-world skills in a real-world environment.</p>
+
+            <div className='learn-btn'>
+                <button>learn more</button>
+            </div>
+
+        </div>
+
+
+        <div className='interview-image'>
+            <img src={InterviewImg} alt="" />
+        </div>
+     
 
     </Container>
       
