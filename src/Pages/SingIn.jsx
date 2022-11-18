@@ -42,7 +42,7 @@ const SingIn = () => {
     e.preventDefault();
     dispatch(userSingInActions(emailPassword.email,emailPassword.password));
 
-    console.log(selector)
+   // console.log(selector)
 
     setEmailPassword({
       email: '',

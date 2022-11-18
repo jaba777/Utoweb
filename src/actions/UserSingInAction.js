@@ -19,7 +19,7 @@ export const userSingInActions=(email,password1) => async(dispatch) => {
       const {data} = await axios.post('http://127.0.0.1:8000/api/token/',
         {
             "email": email,
-            "password1": password1,
+            "password": password1,
         }
         ,config
       )

@@ -1,0 +1,1 @@
+export const React_MAP_GOOGLEMAPS = 'AIzaSyB_PHB4nbH58Q6Yy3vqP_oRWgJxn-p4-kU';

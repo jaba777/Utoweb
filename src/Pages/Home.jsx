@@ -96,21 +96,26 @@ const Home = () => {
 
     <Container className='interview'>
 
+        <div className="interview-container">
+
         <div className="interviw-text">
 
             <h2>Interview like it’s <span>2022</span></h2>
 
-            <p>Ditch out of reach and out of touch interview questions about golf balls and 747s — and turn off your clunky screen share for good. Code, create, and collaborate with an IDE built to showcase real-world skills in a real-world environment.</p>
+                <p>Ditch out of reach and out of touch interview questions about golf balls and 747s — and turn off your clunky screen share for good. Code, create, and collaborate with an IDE built to showcase real-world skills in a real-world environment.</p>
 
-            <div className='learn-btn'>
-                <button>learn more</button>
+                <div className='learn-btn'>
+                    <button>learn more</button>
+                </div>
+
             </div>
 
-        </div>
 
+            <div className='interview-image'>
+                <img src={InterviewImg} alt="" />   
+            </div>
 
-        <div className='interview-image'>
-            <img src={InterviewImg} alt="" />
+            
         </div>
      
 
