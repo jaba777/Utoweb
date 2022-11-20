@@ -1,10 +1,122 @@
+.container-contact{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.contact-inputs-cont{
+    display: flex;
+    justify-content: center;
+    flex: 2;
+}
+
+.contact-inputs{
+    width: 400px;
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-info h1{
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+
+.contact-info p{
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+.contact-info p span{
+   color: rgb(36, 171, 224);
+}
+
+.contact-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.inputs-box{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.inputs input{
+ background-color: #e3e2e1;
+ border: none;
+ width: 106px;
+ border-radius: 20px;
+ padding: 5px;
+}
+
+#contact-area{
+    background-color: #e3e2e1;
+    border: none;
+    height: 76px;
+    width: 395px;
+    resize: none;
+    padding: 10px;
+}
+
+
+
+.inputs input:focus,
+#contact-area:focus{
+    outline: none;
+}
+
+.contact-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-btn button{
+    border: none;
+    background: rgb(36, 171, 224);
+    padding: 0.8rem 3rem;
+    border-radius: 20rem;
+    font-weight: 700;
+    color: #fff;
+}
+
 .google-aps-container{
-    width: 600px;
-    height: 600px;
+    height: 550px;
     margin-top: 4rem;
+    flex: 2;
+    width: 100%;
 }
 
 .map-container{
     width: 100%;
     height: 100%;
+    border-radius: 20px;
+}
+
+
+@media(max-width: 987px){
+    .container-contact{
+        flex-direction: column;
+    }
+
+    .google-aps-container{
+        width: 100%;
+        flex: none;
+    }
 }
