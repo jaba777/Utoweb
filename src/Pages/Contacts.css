@@ -3,6 +3,7 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    margin: 4rem 0;
 }
 
 .contact-inputs-cont{
@@ -14,7 +15,7 @@
 .contact-inputs{
     width: 400px;
     margin: 0 auto;
-    max-width: 95%;
+    max-width: 100%;
 }
 
 .contact-info{
@@ -56,18 +57,24 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .inputs input{
- background-color: #e3e2e1;
+ background-color: #dad4cf;
  border: none;
  width: 106px;
  border-radius: 20px;
  padding: 5px;
+ font-size: 13px;
+}
+
+.inputs input:nth-child(3){
+    width: 150px;
 }
 
 #contact-area{
-    background-color: #e3e2e1;
+    background-color: #dad4cf;
     border: none;
     height: 76px;
     width: 395px;
@@ -81,6 +88,8 @@
 #contact-area:focus{
     outline: none;
 }
+
+
 
 .contact-btn{
     display: flex;

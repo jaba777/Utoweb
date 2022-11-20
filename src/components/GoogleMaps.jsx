@@ -20,8 +20,8 @@ import { React_MAP_GOOGLEMAPS } from '../constants/GoogleApi';
 function Map(){
     const [marker,setMarker]=useState(false);
 
-    return <GoogleMap zoom={12} 
-    center={{lat: 41.7151,lng: 44.8271}} 
+    return <GoogleMap zoom={14} 
+    center={{lat: 41.7096,lng: 44.7569}} 
     mapContainerClassName="map-container"
     options={{
         zoomControl: false,

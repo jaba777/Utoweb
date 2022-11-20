@@ -60,9 +60,7 @@ const Header = () => {
       </div>
 
         <Link to='/'>Home</Link>
-        <Link to='/about-us'>About us</Link>
         <Link to='/sing-in'>Sign in</Link>
-
         <Link to='/sing-up'><FaArrowAltCircleUp /> Sign up</Link>
         <Link to='/contact'>Contact</Link>
      </div>

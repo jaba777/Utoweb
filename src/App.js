@@ -19,12 +19,11 @@ function App() {
       <Route path='/' element={<FooterContain><Home /></FooterContain>}></Route>
       <Route path='/sing-up' element={<SingUp />}></Route>
       <Route path='/sing-in' element={<SingIn/>}></Route>
-      <Route path='/contact' element={<Contacts />}></Route>
+      <Route path='/contact' element={<FooterContain><Contacts /></FooterContain>}></Route>
 
       <Route path='*' element={<Error />}></Route>
     </Routes>
 
-    {/*<Footer />*/}
      
     </div>
   );
